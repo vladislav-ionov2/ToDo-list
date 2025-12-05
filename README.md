@@ -40,7 +40,7 @@ Ziel des Projekts
 
 Ich wollte ein kleines Projekt machen, bei dem ich:
 
-- DOM-Manipulation übe  
+- DOM-Manipulation üben  
 - mit Events in JavaScript arbeite  
 - Daten speichere und wieder lade  
 - ein kleines UI mit Animationen gestalte
