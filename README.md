@@ -34,8 +34,6 @@ Wie startet man das Projekt?
 
 ---
 
----
-
 Ziel des Projekts
 
 Ich wollte ein kleines Projekt machen, bei dem ich:
