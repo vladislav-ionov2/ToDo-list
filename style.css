@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app {
+  background: #fff;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  outline: 2px solid #6c63ff;
+}
+
+form button {
+  padding: 10px 16px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #5952e8;
+}
+
+#task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task button {
+  margin-left: auto;
+  background: #ff7b70;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.task button:hover {
+  background: #e4655d;
+}
+
+#all-done {
+  margin-top: 20px;
+  background: #ff8a65;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-12px);
+  transition: 0.4s;
+}
+
+/* Confetti */
+.confetti {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  background: #6c63ff;
+  animation: fall 1.2s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(200px) rotate(360deg);
+    opacity: 0;
+  }
+}
